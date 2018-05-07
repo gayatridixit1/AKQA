@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Conversion Client</title>
+</head>
+<body>
+    <div style="text-align:center">
+        <h2>Conversion Client</h2>
+        Please enter Name :   <input type="text" id="txtValue1" min="1" max="100">
+        <label id="name" style="color:red; visibility:hidden;">Name is empty.</label><br/><br/>
+        Please enter Amount :   <input type="number" id="txtValue2" min="1" max="100">
+        <label id="amount" style="color:red; visibility:hidden;">Amount is empty.</label><br/><br />
+        Name from Conversion API Service : <label id="resultName"></label><br/><br/>
+        Amount from Conversion API Service : <label id="resultAmount"></label><br/><br/>
+        <input type="button" value="Submit" id="submit">
+    </div>
+    <script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="/Scripts/Convert.js" type="text/javascript"></script>
+</body>
+</html>
